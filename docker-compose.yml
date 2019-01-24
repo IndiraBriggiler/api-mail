@@ -5,3 +5,11 @@ services:
     container_name: indira-mail
     volumes:
     - .:/app
+
+    networks:
+    - proxy
+
+
+networks:
+    proxy:
+        external: true
